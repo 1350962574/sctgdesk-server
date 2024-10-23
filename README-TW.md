@@ -9,6 +9,7 @@
 
 # SctgDesk 伺服器程式
 
+![Docker Pulls](https://img.shields.io/docker/pulls/sctg/sctgdesk-server)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/multiarch-docker-hub.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/multiarch-docker-hub.yml)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/macos-intel-build.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/macos-intel-build.yml)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/windows.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/windows.yml)
@@ -32,6 +33,10 @@ Web 控制台可通過以下位址訪問`http://<server-ip>:21114/`登錄名 “
 您可以在 builtins API 伺服器中的位址`http://<server-ip>:21114/api/doc/`.
 
 非互動式 API 文件可在[sctgdesk-api-server 存儲庫](https://sctg-development.github.io/sctgdesk-api-server/).
+
+## 為專案加星標
+
+**如果您欣賞我的作品，請考慮給它打星標！🤩 或**[![](https://img.shields.io/static/v1?label=Sponsor\&message=%E2%9D%A4\&logo=GitHub\&color=%23fe8e86)](https://github.com/sponsors/sctg-development)
 
 ## TL;博士
 
@@ -83,6 +88,17 @@ services:
 mkdir -p data
 docker-compose up 
 ```
+
+## 二進位檔
+
+二進位檔可用於以下平臺：
+
+*   Linux x86\_64靜態連結
+*   Linux arm64 靜態連結
+*   Linux armv7 靜態連結
+*   MacOS 英特爾
+*   MacOS Apple Silicon
+*   Windows x86\_64
 
 ### 預設管理員使用者
 
@@ -323,6 +339,7 @@ Docker 鏡像是自動生成的，並在每個 github 版本上發佈。
 |--- |--- |
 |AMD64 系列 |`sctg/sctgdesk-server:latest`|
 |ARM64V8 |`sctg/sctgdesk-server:latest`|
+|ARM32V7 |`sctg/sctgdesk-server:latest`|
 
 您可以直接使用`docker run`使用以下命令：
 

@@ -9,6 +9,7 @@
 
 # SctgDesk Server Program
 
+![Docker Pulls](https://img.shields.io/docker/pulls/sctg/sctgdesk-server)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/multiarch-docker-hub.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/multiarch-docker-hub.yml)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/macos-intel-build.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/macos-intel-build.yml)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/windows.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/windows.yml)
@@ -33,6 +34,10 @@ The webconsole is accessible at the address `http://<server-ip>:21114/` with log
 You can browse the API documentation in the builtins API server at the address `http://<server-ip>:21114/api/doc/`.  
 
 A non interactive API documentation is available at [sctgdesk-api-server repo](https://sctg-development.github.io/sctgdesk-api-server/).
+
+## Star the project
+
+**If you appreciate my work, please consider giving it a star! 🤩 or a** [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/sctg-development)
 
 ## TL;DR
 
@@ -84,6 +89,16 @@ and start the server with:
 mkdir -p data
 docker-compose up 
 ```
+
+## Binaries
+
+Binaries are available for the following platforms:  
+- Linux x86_64 statically linked
+- Linux arm64 statically linked
+- Linux armv7 statically linked
+- MacOS Intel
+- MacOS Apple Silicon
+- Windows x86_64
 
 ### Default admin user
 
@@ -325,6 +340,7 @@ These images are build against `ubuntu-22.04` with the only addition of the main
 | --- | --- |
 | amd64 | `sctg/sctgdesk-server:latest` |
 | arm64v8 | `sctg/sctgdesk-server:latest` |
+| arm32v7 | `sctg/sctgdesk-server:latest` |
 
 You can start these images directly with `docker run` with these commands:
 

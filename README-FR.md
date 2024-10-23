@@ -9,6 +9,7 @@
 
 # Programme de serveur SctgDesk
 
+![Docker Pulls](https://img.shields.io/docker/pulls/sctg/sctgdesk-server)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/multiarch-docker-hub.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/multiarch-docker-hub.yml)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/macos-intel-build.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/macos-intel-build.yml)
 [![build](https://github.com/sctg-development/sctgdesk-server/actions/workflows/windows.yml/badge.svg)](https://github.com/sctg-development/sctgdesk-server/actions/workflows/windows.yml)
@@ -32,6 +33,10 @@ La webconsole est accessible à l’adresse `http://<server-ip>:21114/` avec l�
 Vous pouvez parcourir la documentation de l’API dans le serveur d’API intégré à l’adresse suivante : `http://<server-ip>:21114/api/doc/`.
 
 Une documentation API non interactive est disponible à l’adresse suivante : [sctgdesk-api-server repo](https://sctg-development.github.io/sctgdesk-api-server/).
+
+## Lancez le projet
+
+**Si vous appréciez mon travail, pensez à lui donner une étoile ! 🤩 ou un** [![](https://img.shields.io/static/v1?label=Sponsor\&message=%E2%9D%A4\&logo=GitHub\&color=%23fe8e86)](https://github.com/sponsors/sctg-development)
 
 ## TL; DR
 
@@ -83,6 +88,17 @@ et démarrez le serveur avec :
 mkdir -p data
 docker-compose up 
 ```
+
+## Binaires
+
+Les binaires sont disponibles pour les plateformes suivantes :
+
+*   Linux x86\_64 lié statiquement
+*   Linux arm64 lié statiquement
+*   Linux armv7 lié statiquement
+*   MacOS Intel
+*   MacOS Apple Silicon
+*   Windows x86\_64
 
 ### Utilisateur admin par défaut
 
@@ -323,6 +339,7 @@ Ces images sont construites contre `ubuntu-22.04` avec le seul ajout des binaire
 | --- | --- |
 | AMD64 | `sctg/sctgdesk-server:latest` |
 | ARM64V8 | `sctg/sctgdesk-server:latest` |
+| ARM32v7 | `sctg/sctgdesk-server:latest` |
 
 Vous pouvez commencer ces images directement avec `docker run` avec ces commandes :
 
